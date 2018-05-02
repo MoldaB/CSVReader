@@ -1,0 +1,65 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  "main": ["/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReader.swiftmodule","<CSVReader.module>"]
+  "test": ["/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReader.swiftmodule","/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderPackageTests.xctest/Contents/MacOS/CSVReaderPackageTests","/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderTests.swiftmodule","<CSVReader.module>","<CSVReaderPackageTests.test>","<CSVReaderTests.module>"]
+  "CSVReader.module": ["/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReader.swiftmodule","<CSVReader.module>"]
+  "CSVReaderPackageTests.test": ["/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderPackageTests.xctest/Contents/MacOS/CSVReaderPackageTests","<CSVReaderPackageTests.test>"]
+  "CSVReaderTests.module": ["/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderTests.swiftmodule","<CSVReaderTests.module>"]
+default: "main"
+commands: 
+  "<C.CSVReader.module>":
+    tool: phony
+    inputs: ["/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReader.swiftmodule"]
+    outputs: ["<CSVReader.module>"]
+
+  "<C.CSVReaderPackageTests.test>":
+    tool: phony
+    inputs: ["/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderPackageTests.xctest/Contents/MacOS/CSVReaderPackageTests"]
+    outputs: ["<CSVReaderPackageTests.test>"]
+
+  "<C.CSVReaderTests.module>":
+    tool: phony
+    inputs: ["/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderTests.swiftmodule"]
+    outputs: ["<CSVReaderTests.module>"]
+
+  "C.CSVReader.module":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "CSVReader"
+    module-output-path: "/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReader.swiftmodule"
+    inputs: ["/Users/yevgenybeygel/Projects/XCode/CSVReader/Sources/CSVReader/CSVReader.swift"]
+    outputs: ["/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReader.build/CSVReader.swift.o","/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReader.swiftmodule"]
+    import-paths: ["/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug"]
+    temps-path: "/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReader.build"
+    objects: ["/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReader.build/CSVReader.swift.o"]
+    other-args: ["-swift-version","4","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Onone","-g","-enable-testing","-j4","-DSWIFT_PACKAGE","-module-cache-path","/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/ModuleCache","-Xfrontend","-color-diagnostics"]
+    sources: ["/Users/yevgenybeygel/Projects/XCode/CSVReader/Sources/CSVReader/CSVReader.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "4"
+
+  "C.CSVReaderPackageTests.test":
+    tool: shell
+    description: "Linking ./.build/x86_64-apple-macosx10.10/debug/CSVReaderPackageTests.xctest/Contents/MacOS/CSVReaderPackageTests"
+    inputs: ["/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReader.build/CSVReader.swift.o","/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderTests.build/CSVReaderTests.swift.o","/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderTests.build/XCTestManifests.swift.o"]
+    outputs: ["/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderPackageTests.xctest/Contents/MacOS/CSVReaderPackageTests"]
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-g","-L","/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug","-o","/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderPackageTests.xctest/Contents/MacOS/CSVReaderPackageTests","-module-name","CSVReaderPackageTests","-Xlinker","-bundle","/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReader.build/CSVReader.swift.o","/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderTests.build/CSVReaderTests.swift.o","/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderTests.build/XCTestManifests.swift.o"]
+
+  "C.CSVReaderTests.module":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "CSVReaderTests"
+    module-output-path: "/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderTests.swiftmodule"
+    inputs: ["/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReader.swiftmodule","/Users/yevgenybeygel/Projects/XCode/CSVReader/Tests/CSVReaderTests/CSVReaderTests.swift","/Users/yevgenybeygel/Projects/XCode/CSVReader/Tests/CSVReaderTests/XCTestManifests.swift"]
+    outputs: ["/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderTests.build/CSVReaderTests.swift.o","/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderTests.build/XCTestManifests.swift.o","/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderTests.swiftmodule"]
+    import-paths: ["/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug"]
+    temps-path: "/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderTests.build"
+    objects: ["/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderTests.build/CSVReaderTests.swift.o","/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReaderTests.build/XCTestManifests.swift.o"]
+    other-args: ["-swift-version","4","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Onone","-g","-enable-testing","-j4","-DSWIFT_PACKAGE","-module-cache-path","/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/ModuleCache","-Xfrontend","-color-diagnostics"]
+    sources: ["/Users/yevgenybeygel/Projects/XCode/CSVReader/Tests/CSVReaderTests/CSVReaderTests.swift","/Users/yevgenybeygel/Projects/XCode/CSVReader/Tests/CSVReaderTests/XCTestManifests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "4"
+

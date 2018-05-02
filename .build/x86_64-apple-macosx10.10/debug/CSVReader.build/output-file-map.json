@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReader.build/master.swiftdeps"
+  },
+  "/Users/yevgenybeygel/Projects/XCode/CSVReader/Sources/CSVReader/CSVReader.swift": {
+    "dependencies": "/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReader.build/CSVReader.d",
+    "object": "/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReader.build/CSVReader.swift.o",
+    "swiftmodule": "/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReader.build/CSVReader~partial.swiftmodule",
+    "swift-dependencies": "/Users/yevgenybeygel/Projects/XCode/CSVReader/.build/x86_64-apple-macosx10.10/debug/CSVReader.build/CSVReader.swiftdeps"
+  }
+}

@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "94d3cc0486423b3c1cf81bcbc0fd698f"
+build_time: [1525270321, 582600000]
+inputs:
+  "/Users/yevgenybeygel/Projects/XCode/CSVReader/Sources/CSVReader/CSVReader.swift": [1525269459, 0]
